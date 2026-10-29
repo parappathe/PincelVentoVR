@@ -1,0 +1,18 @@
+html, body { margin: 0; height: 100%; overflow: hidden; background: #f1e7cf; font-family: "Palatino Linotype", Palatino, Georgia, serif; }
+#app canvas { display: block; }
+#vr {
+  position: fixed; left: 50%; bottom: 22px; transform: translateX(-50%);
+  padding: 14px 30px; font-size: 18px; font-weight: 700; letter-spacing: 0.02em; font-family: inherit;
+  color: #fff6e6; background: #a8242b; border: 0; border-radius: 10px; cursor: pointer;
+  box-shadow: 0 4px 14px rgba(60,40,20,0.35);
+}
+#vr:disabled { background: #cfc4ab; color: #6d6253; cursor: default; }
+#hint {
+  position: fixed; left: 16px; top: 14px; color: #1f1b17; font-size: 15px;
+  background: rgba(242,232,207,0.85); border: 1px solid rgba(120,90,50,0.35); padding: 6px 10px; border-radius: 6px; pointer-events: none;
+}
+#hint:empty { display: none; }
+#fps {
+  display: none; position: fixed; right: 16px; top: 14px; color: #1f1b17; font: bold 15px monospace;
+  background: rgba(242,232,207,0.85); padding: 4px 8px; border-radius: 6px; pointer-events: none;
+}
